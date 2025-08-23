@@ -1,0 +1,76 @@
+{% include 'header.html' %}
+
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                <!-- Project Card 1-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="row g-0 align-items-center">
+                            <!-- Text -->
+                            <div class="col-md-6 p-5 order-md-1">
+                                <h2 class="fw-bolder">Musings & Ink</h2>
+                                <p>Musings & Ink is a personal blogging platform designed to showcase thoughts, experiences, and creative writing in a clean, minimalist interface. This project emphasizes simplicity, readability, and user-friendly navigation.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Responsive layout for desktop and mobile devices.</li>
+                                    <li>Dedicated section for individual blog posts.</li>
+                                    <li>Easy navigation with Home, About, Contact menu.</li>
+                                    <li>Modern design aesthetics inspired by Start Bootstrap templates.</li>
+                                </ul>
+
+                                <h3>Technology Used</h3>
+                                <p>Built using <strong>Flask</strong> for dynamic content and routing, demonstrating skills in web development and responsive design.</p>
+
+                                <h3>Purpose</h3>
+                                <p>Serves as a portfolio piece and a functional platform for creative expression.</p>
+                            </div>
+                            <!-- Image -->
+                            <div class="col-md-6 order-md-2">
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/project_1.png') }}" alt="Musings & Ink" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2-->
+                <div class="card overflow-hidden shadow rounded-4 border-0">
+                    <div class="card-body p-0">
+                        <div class="row g-0 align-items-center">
+                            <!-- Text -->
+                            <div class="col-md-6 p-5 order-md-1">
+                                <h2 class="fw-bolder">Cafe Connect</h2>
+                                <p>Cafe Connect is your ultimate guide to finding the perfect cafe for work or study. It provides detailed insights into internet speed, availability of power outlets, and coffee quality.</p>
+                                <p>Simply browse, choose, and enjoy your productive time in the ideal café environment!</p>
+                            </div>
+                            <!-- Image -->
+                            <div class="col-md-6 order-md-2">
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/project_2.png') }}" alt="Cafe Connect" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to action section-->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ url_for('contact') }}">Contact me</a>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
