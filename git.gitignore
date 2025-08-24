@@ -1,0 +1,34 @@
+# 🐍 Python makes extra "trash" files when it runs
+__pycache__/
+*.py[cod]
+
+# 🎒 Don't take my virtual environment to GitHub
+# (it has hundreds of packages, too heavy for the bag!)
+venv/
+env/
+.venv/
+
+# 🤫 Secret stuff like passwords or API keys
+.env
+
+# 📝 Logs (like a diary of app messages, not needed online)
+*.log
+
+# 💻 Computer junk files (created by Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# ✏️ My editor settings (VS Code, PyCharm etc.)
+.vscode/
+.idea/
+
+# 🍪 Flask "instance" folder (local files for your computer only)
+instance/
+
+# 📚 Local databases I create while testing
+*.db
+*.sqlite3
+
+# 🧪 Testing junk (created when I run tests)
+.pytest_cache/
+.coverage
